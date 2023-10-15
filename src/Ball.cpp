@@ -4,9 +4,10 @@ using namespace std;
 constexpr size_t X = 0;
 constexpr size_t Y = 1;
 
-Ball::Ball(float x, float y, float x_speed, float y_speed) : 
+Ball::Ball(float x, float y, float x_speed, float y_speed, float radius) : 
 	pos({x, y}),
-	speed({x_speed, y_speed}) {}
+	speed({x_speed, y_speed}),
+    radius(radius) {}
 
 bool Ball::UpdateSpeed(float x_speed, float y_speed) {
 	// not check;
@@ -17,6 +18,10 @@ bool Ball::UpdateSpeed(float x_speed, float y_speed) {
 
 Vector2f Ball::GetPosition() const {
 	return pos;
+}
+
+float Ball::GetRadius() const {
+	return radius;
 }
 
 Vector2f Ball::GetSpeed() const {

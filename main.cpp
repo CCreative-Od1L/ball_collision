@@ -21,7 +21,12 @@ int main() {
 		{-10, -10, 0, WINDOW_HEIGHT},								// ×óÇ½±Ú
 		{0, -10, WINDOW_WIDTH + 10, 0},								// ÉÏÇ½±Ú
 		{WINDOW_WIDTH, 0, WINDOW_WIDTH + 10, WINDOW_HEIGHT + 10},	// ÓÒÇ½±Ú
-		{-10, WINDOW_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT + 10}		// ÏÂÇ½±Ú
+		{-10, WINDOW_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT + 10},		// ÏÂÇ½±Ú
+
+		{100, 200, 130, 350},
+		{257, 104, WINDOW_WIDTH - 197, WINDOW_HEIGHT - 336},
+		{262, 255, WINDOW_WIDTH - 286, WINDOW_HEIGHT - 148},
+		{466, 316, WINDOW_WIDTH - 74,  WINDOW_HEIGHT - 80},
 	};
 	while (true) {
 		cleardevice();
